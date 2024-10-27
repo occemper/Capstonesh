@@ -1,4 +1,7 @@
 import { Outlet, Link } from "react-router-dom";
+import CrwnLogo from '../../assets/crown.svg?react';
+
+import './navigation.styles.scss'
 
 
 function Navigation() {
@@ -6,7 +9,7 @@ function Navigation() {
         <>
             <div className="navigation">
                 <Link className="logo-container" to='/'>
-                    <div>Logo</div>
+                    <CrwnLogo className='logo' />
                 </Link>
                 <div className="nav-links-container">
                     <Link className="nav-link" to='/shop'>
